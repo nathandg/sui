@@ -11,6 +11,5 @@ function fetchAndRender (name) {
 
 document.addEventListener('DOMContentLoaded', () => {
     fetchAndRender('apps');
-    fetchAndRender('links');
     fetchAndRender('providers');
 });

@@ -54,47 +54,7 @@ Please note:
  - Find the names  of icons to use at [Material Design Icons](https://materialdesignicons.com/)
 
 #### Bookmarks
-Add your bookmarks by editing links.json:
-
-```
-{
-   "bookmarks":[
-      {
-         "category":"Category1",
-         "links":[
-            {
-               "name":"Link1",
-               "url":"http://example.com"
-            },
-            {
-               "name":"Link2",
-               "url":"http://example.com",
-               "target":"optionals"
-            }
-         ]
-      },
-      {
-         "category":"Category2",
-         "links":[
-            {
-               "name":"Link1",
-               "url":"http://example.com"
-            },
-            {
-               "name":"Link2",
-               "url":"http://example.com"
-            }
-         ]
-      }
-   ]
-}
-```
-Add names for the categories you wish to define and add the bookmarks for each category.
-
-Please note:
-
- - No `http://` in the URL
- - No `,` at the end of the last bookmark in a category and at the end of the last category
+<!-- Bookmarks removed from UI; links.json is no longer used. -->
 
 
 #### Color themes

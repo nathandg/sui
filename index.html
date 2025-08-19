@@ -17,36 +17,36 @@
     <section id="modal">
         <div>
             <header id="modal-header">
-                <h1>Options</h1>
-                <a href="#" title="Close" class="modal-close">
+                <h1>Opções</h1>
+                <a href="#" title="Fechar" class="modal-close">
                     <span class="iconify" data-icon="mdi-close"></span>
                 </a>
             </header>
 
-            <h2>Color themes</h2>
+            <h2>Temas de cores</h2>
 
             <div id="modal-theme">
-                <button data-theme="blackboard" class="theme-button theme-blackboard">Blackboard</button>
-                <button data-theme="gazette" class="theme-button theme-gazette">Gazette</button>
-                <button data-theme="espresso" class="theme-button theme-espresso">Espresso</button>
-                <button data-theme="cab" class="theme-button theme-cab">Cab</button>
-                <button data-theme="cloud" class="theme-button theme-cloud">Cloud</button>
-                <button data-theme="lime" class="theme-button theme-lime">Lime</button>
-                <button data-theme="passion" class="theme-button theme-passion">Passion</button>
-                <button data-theme="blues" class="theme-button theme-blues">Blues</button>
-                <button data-theme="chalk" class="theme-button theme-chalk">Chalk</button>
+                <button data-theme="blackboard" class="theme-button theme-blackboard">Quadro negro</button>
+                <button data-theme="gazette" class="theme-button theme-gazette">Gazeta</button>
+                <button data-theme="espresso" class="theme-button theme-espresso">Café</button>
+                <button data-theme="cab" class="theme-button theme-cab">Táxi</button>
+                <button data-theme="cloud" class="theme-button theme-cloud">Nuvem</button>
+                <button data-theme="lime" class="theme-button theme-lime">Limão</button>
+                <button data-theme="passion" class="theme-button theme-passion">Paixão</button>
+                <button data-theme="blues" class="theme-button theme-blues">Azuis</button>
+                <button data-theme="chalk" class="theme-button theme-chalk">Giz</button>
                 <button data-theme="tron" class="theme-button theme-tron">Tron</button>
-                <button data-theme="paper" class="theme-button theme-paper">Paper</button>
+                <button data-theme="paper" class="theme-button theme-paper">Papel</button>
             </div>
 
-            <h2>Search options</h2>
+            <h2>Opções de busca</h2>
 
             <section id="providers">
                 <script type="text/handlebars-template" id="providers-template">
                     <table>
                         <tr>
-                            <th>Website</th>
-                            <th>Prefix</th>
+                            <th>Site</th>
+                            <th>Prefixo</th>
                         </tr>
                         {{#providers}}
                         <tr>
@@ -67,9 +67,7 @@
 
     <main id="container" class="fade">
 
-        <section id="search">
-            <input name="keywords" type="text" id="keywords" size="50" spellcheck="false" autofocus="true" onkeydown="handleKeyPress(event)">
-        </section>
+    <!-- Campo de busca removido -->
 
         <section id="header">
             <h2 id="header_date"></h2>
@@ -78,7 +76,7 @@
 
         <section id="apps">
             <script type="text/handlebars-template" id="apps-template">
-            <h3>Applications</h3>
+            <h3>Aplicativos</h3>
             <div id="apps_loop">
                 {{#apps}}
                     <div class="apps_item">
@@ -95,21 +93,7 @@
             </script>
         </section>
 
-         <section id="links">
-            <script type="text/handlebars-template" id="links-template">
-            <h3>Bookmarks</h3>
-            <div id="links_loop">
-                {{#bookmarks}}
-                    <div id="links_item">
-                        <h4>{{category}}</h4>
-                        {{#links}}
-                            <a href="{{url}}" target="{{target}}" class="theme_color-border theme_text-select">{{name}}</a>
-                        {{/links}}
-                    </div>
-                {{/bookmarks}}
-            </div>
-            </script>
-        </section>
+    <!-- Favoritos removidos - exibindo somente Aplicativos -->
     </main>
 
     <div id="modal_init">

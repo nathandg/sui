@@ -29,6 +29,17 @@ document.addEventListener('DOMContentLoaded', () => {
     setValueFromLocalStorage('color-background');
     setValueFromLocalStorage('color-text-pri');
     setValueFromLocalStorage('color-text-acc');
+    // Se nenhum tema estiver definido, aplicar 'paper' como padrão
+    const bg = localStorage.getItem('color-background');
+    const pri = localStorage.getItem('color-text-pri');
+    const acc = localStorage.getItem('color-text-acc');
+    if (!bg && !pri && !acc) {
+        setTheme({
+            'color-background': '#F8F6F1',
+            'color-text-pri': '#4C432E',
+            'color-text-acc': '#AA9A73'
+        });
+    }
 });
 
 const dataThemeButtons = document.querySelectorAll('[data-theme]');
