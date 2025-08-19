@@ -5,6 +5,12 @@
             "url": "files.nathandg.dpdns.org",
             "icon": "folder-multiple-outline",
             "target": "_blank"
+        },
+        {
+            "name": "Transmission",
+            "url": "transmission.nathandg.dpdns.org",
+            "icon": "progress-download",
+            "target": "_blank"
         }
     ]
 }
